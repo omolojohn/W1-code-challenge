@@ -17,4 +17,4 @@ function calculateGrade(marks) {
     }
 }
 // Test cases with console.log
-console.log(calculateGrade(82));   // Output: A
+console.log(calculateGrade(82));

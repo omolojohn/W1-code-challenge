@@ -1,6 +1,6 @@
 # WK1-Code-Challenge
 
-## Date: 23/03/2024
+## Date: 10/09/2025
 
 ### By "John Oyoo Omolo"
 
@@ -27,7 +27,7 @@ github.com/omolojohn
 ###### License
 MIT License
 
-Copyright (c) 2024 omolojohn
+Copyright (c) 2025 omolojohn
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
