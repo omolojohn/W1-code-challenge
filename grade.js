@@ -1,20 +1,32 @@
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
 function calculateGrade(marks) {
-    // If marks are greater than 79, return "A"
-    if (marks > 79) {
-        return "A";
-    // If marks are between 60 and 79 (including 79), "B"
-    } else if (marks >= 60) {
-        return "B";
-    // If marks are between 50 and 59 (including 59), return "C"
-    } else if (marks >= 50) {
-        return "C";
-    // If marks are between 40 and 49 (including 49), return "D"
-    } else if (marks >= 40) {
-        return "D";
-    // If marks are less than 40, return "E"
-    } else {
-        return "E";
-    }
+  if (marks > 79) {
+    return "A";
+  } else if (marks >= 60) {
+    return "B";
+  } else if (marks >= 50) {
+    return "C";
+  } else if (marks >= 40) {
+    return "D";
+  } else {
+    return "E";
+  }
 }
-// Test cases with console.log
-console.log(calculateGrade(82));
+
+rl.question("Enter your marks: ", (input) => {
+  const marks = parseInt(input);
+
+  if (isNaN(marks)) {
+    console.log("Please enter a valid number.");
+  } else {
+    console.log(`Your grade is: ${calculateGrade(marks)}`);
+  }
+
+  rl.close();
+});
